@@ -1,20 +1,22 @@
 import React from "react";
 
-import { link, a } from "react-router-dom";
+import { link, a ,N} from "react-router-dom";
 
 function Header() {
   return (
-    <>
-      <header className="hide-when-mobile">
-        <h1>africa store</h1>
+    <div>
+      <header className="hide-when-mobile head">
+        <h1>BIS</h1>
+       <a className="main-link hl" href="/Home">Home</a>
         <ul className="flex">
-          <li className="main-list">
-            <a className="main-link" href="/Html">
+        <a className="  main-list main-link " href="/Laptop">
               Laptop
             </a>
+          {/* <li className="main-list">
+            
             <ul className="sub-ul">
               <li>
-                <a className="main-link" href="/Html">
+                <a className="main-link" href="/Computer">
                   <a href="">Samsung</a>
                 </a>
               </li>
@@ -25,11 +27,12 @@ function Header() {
                 <a href="">LG</a>
               </li>
             </ul>
-          </li>
-          <li className="main-list">
-            <a className="main-link" href="/css">
+          </li> */}
+          <a className="main-link main-list" href="/Computer">
               Computer
             </a>
+          {/* <li className="main-list">
+            
             <ul className="sub-ul">
               <li>
                 <a href=""> Samsung</a>
@@ -55,12 +58,18 @@ function Header() {
                 </ul>
               </li>
             </ul>
+          </li> */}
+          <li className="main-list">
+            <a className="main-link" href="/Proudcts">
+              Proudcts
+            </a>
           </li>
           <li className="main-list">
-            <a className="main-link" href="/javascript">
+            <a className="main-link" href="/Login">
               Login
             </a>
           </li>
+          
         </ul>
       </header>
       <header className="show-when-mobile">
@@ -118,7 +127,7 @@ function Header() {
             </a>
             <ul className="sub-ul sub-of-js">
               <li>
-                <a href="">5🔥</a>
+                <a href="">5</a>
               </li>
               <li>
                 <a href="">4</a>
@@ -131,7 +140,7 @@ function Header() {
         </ul>
         
       </header>
-    </>
+    </div>
   );
 }
 
