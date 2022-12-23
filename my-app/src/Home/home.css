@@ -1,0 +1,97 @@
+*{
+    
+}
+.Home{
+   display: flex;
+   flex-wrap: wrap;
+   background-color:#00008B;
+   position: relative;
+   padding: 30px;
+   margin: 25px;
+}
+.Home .welcome{
+   padding: 20px;
+   margin: 20px;
+    font-weight: 400;
+    font-size: 35px;
+    color: #00008B;
+    line-height: 0.9;
+    letter-spacing: -2;
+    width: 50%;
+}
+.Home .welcome h1{
+    font-size: 50px;
+}
+.Home .img1{
+flex-direction: row;
+position: absolute;
+top: 10%;
+left: 50%;
+padding: 20px;
+margin: 20px;
+}
+@media (max-width:767px) {
+    
+}
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: auto;
+}
+.brief{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(450px , 1fr));
+    grid-gap: 20px;
+    margin: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    
+}
+.brief h3{
+font-size: 25px;
+color: #00008B;
+padding: 20px;
+margin: 20px;
+}
+.brief p{
+    font-size: 20px;
+    color: #777;
+}
+.brief .comp{
+
+line-height: 1.5;
+/* border: 1px solid black;
+border-radius: 6px; */
+text-align: center;
+padding: 25px;
+    margin: 25px;
+
+}
+.brief .lap{
+    /* border: 1px solid black;
+    border-radius: 6px; */
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+}
+.brief .mouse{
+    /* border: 1px solid black;
+    border-radius: 6px; */
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #00008B;
+    border-radius: 50%;
+    font-size: 50px;
+    padding: 10px;
+    margin:30px auto;
+    color: #00008B;
+    padding: auto;
+    background-color: #00008B;
+
+}
