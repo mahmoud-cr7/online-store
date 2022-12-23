@@ -4,7 +4,10 @@ function Footer() {
     return (
       <>
        <footer>
-        www.africaStore.com
+       <div class="footer">
+       All Right Reserved 
+          Leon  © 2022
+      </div>
         </footer>
       </>
     );
