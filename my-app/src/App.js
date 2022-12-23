@@ -1,18 +1,26 @@
-
+import './fontawesome'
+import Home from './Home/home';
 import './App.css';
-import Footer from './footer/footer';
-import Header from './header/header';
+import {BrowserRouter , Route} from 'react-router-dom'
+import { Component } from 'react';
+// import Computer from './Computer/computer';
 
-
-
-function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-     
-     <Footer></Footer>
-    </div>
-  );
-}
+class App extends Component {
+  render(){
+    return (
+      <div className="App">
+        
+        <BrowserRouter>
+        <Home/>
+        {/* <Route exact path='' Component ={Home} />
+        <Route exact path='/computer' Component ={Computer} /> */}
+        </BrowserRouter>
+        
+       
+      </div>
+    );
+  }
+  }
+ 
 
 export default App;
