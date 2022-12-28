@@ -1,23 +1,6 @@
-/* =============
- table of contents
-===============
 
-0. global styles
-1. ul class .flex
-      1.1 sub HTML + css + JavaScript
-      1.2 sub sub of CSS
-
-
-2. main & footer
-3. header of mobile
- 
-*/
-
-/* ===============
-   0. global style
-================ */
-
-* {
+/*
+/* * {
   margin: 0;
   padding: 0;
   color: white;
@@ -26,55 +9,58 @@
 
   text-decoration: none;
   list-style: none;
-/* background-color: white; */
   letter-spacing: 1px;
-}
+} */
 
-html {
+/* html {
   box-sizing: border-box;
   background-color: #f2f2f2;
-}
+} */
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 
-.head {
+
+/* .head {
   background-color: #00008B;
-}
+  display: grid;
+  
+ grid-template-columns: repeat(auto-fill , minmax(50px , 1fr));
+ grid-gap: 10px;
 
-h1 {
+} */
+
+/* h1 {
   padding: 20px;
   font-size: 25px;
-}
+  margin: 10px;
+  transform: translate(5px,-4px);
+} */
 
 /* ===============
    1.  ul class .flex
 ================ */
 
-.hide-when-mobile {
-  display: flex;
-  justify-content: space-around;
-}
 
-.flex {
-  display: flex;
-}
 
-.main-list {
+/* .flex {
+  display: flex;
+} */
+
+/* .main-list {
   padding: 20px;
   font-size: 19px;
   position: relative;
-}
+} */
 
-.main-link {
+/* .main-link {
   padding: 8px 15px;
-  margin: auto;
-}
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  
+  
+} */
 
-.main-link:hover {
+/* .main-link:hover {
   color: white;
   box-shadow: 0 0 5px white;
   border-radius: 5px;
@@ -84,12 +70,12 @@ h1 {
   padding: auto;
   margin: auto;
   margin-right: 20px;
-}
+} */
 /* =======================================
    1.1 sub HTML + css + JavaScript
 ======================================== */
 
-.sub-ul {
+/* .sub-ul {
   display: none;
 
   position: absolute;
@@ -102,7 +88,7 @@ h1 {
   border-radius: 5px;
   padding: 5px;
 
-  width: 155px;
+  width: fit-content;
 }
 
 .sub-of-js {
@@ -113,22 +99,22 @@ h1 {
   padding: 8px 0;
   font-size: 17px;
   border-bottom: 1px solid black;
-}
+} */
 
-.sub-ul li a:hover {
+/* .sub-ul li a:hover {
   color: #00008B;
   font-weight: bold;
 }
 
 .main-list:hover .sub-ul {
   display: block;
-}
+} */
 
 /* =======================================
    1.2 sub sub of CSS
 ======================================== */
 
-.sub-sub-ul {
+/* .sub-sub-ul {
   position: absolute;
   top: 80px;
   left: 153px;
@@ -143,23 +129,24 @@ h1 {
   width: 150px;
 
   display: none;
-}
+} */
 
-.mini-projects:hover .sub-sub-ul {
+/* .mini-projects:hover .sub-sub-ul {
   display: block;
 }
+@media (max-width:767px) {
+  .head{
+    font-size: 10px;
+    display: grid;
+    /* display: none; */
+   /* grid-template-columns: repeat(auto-fill , minmax(50px , 1fr));
+  }
+  
+} */
 
 
-/* ==================
-    2. main & footer
-===================== */
 
 
 
 
-/* ==================
-    3. header of mobile
-===================== */
-.show-when-mobile {
-  display: none;
-}
+
