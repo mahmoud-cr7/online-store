@@ -4,6 +4,7 @@ import {BrowserRouter ,Routes, Route} from 'react-router-dom'
 import React , { Component } from 'react';
 import Computer from './Computer/computer';
 import Header from './header/header';
+import Footer from './footer/footer';
 import Login from "./Login/login"
 import Register from "./register/register"
 import Proudcts from './Proudcts/prod';
@@ -15,9 +16,9 @@ class App extends Component {
       <div className="App">
         
         <BrowserRouter>
-        <header></header>
+        
   <Routes>
-    <Route path='/Home'element={<Home/>}></Route>
+    <Route path='/'element={<Home/>}></Route>
     <Route path='/laptop'element={<Laptop/>}></Route>
     <Route path='/login'element={<Login/>}></Route>
     <Route path='/register'element={<Register/>}></Route>
