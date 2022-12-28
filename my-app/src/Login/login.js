@@ -1,7 +1,7 @@
 import { text } from "@fortawesome/fontawesome-svg-core";
 import React from "react";
 
-import "./login.css"
+
 
 import "./login.css"
 export default function Login(){
@@ -21,7 +21,7 @@ return(
 
 <div style={{textAlign:"center"}}>
 
-    <button type="submit">Register</button>
+    <button type="submit">Login</button>
 </div>
 </form>
 </div>
