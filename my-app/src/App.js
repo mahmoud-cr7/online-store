@@ -4,6 +4,9 @@ import {BrowserRouter ,Routes, Route} from 'react-router-dom'
 import React , { Component } from 'react';
 import Computer from './Computer/computer';
 import Header from './header/header';
+import Login from "./Login/login"
+import Register from "./register/register"
+import Proudcts from './Proudcts/prod';
 // import Computer from './Computer/computer';
 import Laptop from './Laptop/lap'
 class App extends Component {
@@ -12,10 +15,18 @@ class App extends Component {
       <div className="App">
         
         <BrowserRouter>
-    <Home></Home>
-        {/* <Computer/> */}
-        {/* <Route exact path='' Component ={Home} />
-        <Route exact path='/computer' Component ={Computer} /> */}
+        <header></header>
+  <Routes>
+    <Route path='/Home'element={<Home/>}></Route>
+    <Route path='/laptop'element={<Laptop/>}></Route>
+    <Route path='/login'element={<Login/>}></Route>
+    <Route path='/register'element={<Register/>}></Route>
+    <Route path='/computer'element={<Computer/>}></Route>
+    <Route path='/Proudcts'element={<Proudcts/>}></Route>
+
+
+  </Routes>
+  
         </BrowserRouter>
         </div>
    

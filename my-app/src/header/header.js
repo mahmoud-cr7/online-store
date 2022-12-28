@@ -12,7 +12,7 @@ function Header() {
         <ul >
       
         <li className="main-list">
-        <a className="main-link " href="/laptop">
+        <a className="main-link " href="/home">
               Home
             </a>
             </li >
@@ -37,7 +37,7 @@ function Header() {
             </a>
           </li>
           <li className="main-list">
-            <a className="main-link" href="/Proudcts">
+            <a className="main-link" href="/register">
               Register
             </a>
           </li>
