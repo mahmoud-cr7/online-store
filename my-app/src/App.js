@@ -9,15 +9,16 @@ import Laptop from './Laptop/lap'
 class App extends Component {
   render(){
     return (
-      <BrowserRouter>
-      <div className='App'>
-       
-          {/* <Laptop/> */}
-          <Computer/>
-          {/* <Header/> */}
-          {/* <Home/> */}
+      <div className="App">
+        
+        <BrowserRouter>
+    <Home></Home>
+        {/* <Computer/> */}
+        {/* <Route exact path='' Component ={Home} />
+        <Route exact path='/computer' Component ={Computer} /> */}
+        </BrowserRouter>
         </div>
-      </BrowserRouter>
+   
 
        
     
