@@ -7,7 +7,8 @@ import{FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import Footer from "../footer/footer";
 import Header from "../header/header";
 function Home() {
-  return (<div>
+  return (
+              <div>
     <Header/>
     <div className="Home">
       <div className="welcome">

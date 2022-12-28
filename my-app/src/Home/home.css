@@ -95,3 +95,49 @@ padding: 25px;
     background-color: #00008B;
 
 }
+@media (max-width:1080px) {
+    .Home{
+        /* width: 300px;
+        padding-right: 0px;
+        margin-right: 0px; */
+        align-items: center;
+        justify-content: center;
+    }
+    .Home .img1{
+        display: none;
+    }
+    .Home .welcome{
+        width: 300px;
+        padding: 15px;
+        /* display: none; */
+    }
+    .Home .welcome h1{
+        font-size: 30px;
+    }
+    .Home .welcome p{
+        font-size: 15px;
+    }
+    .brief{
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding: 100px;
+        /* align-items: center;
+        justify-content: center; */
+    }
+}
+@media (max-width:1250px){
+    .Home .img1{
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    .Home .welcome{
+        width: max-content;
+    }
+}
+@media (max-width:400px) {
+    .Home {
+        width: 600px;
+       
+    }
+}

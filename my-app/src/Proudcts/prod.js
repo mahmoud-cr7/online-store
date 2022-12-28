@@ -6,11 +6,12 @@ function Proudcts() {
 
     <div className="Proudcts">
       <Header/>
-     <div className="h1+p">
-     <h1 className="headh1">PROUDCTS</h1>
+      <div className="h1p">
+     <h1 className="headh1">LAPTOPS</h1>
       <p className="headp"> SECTION</p>
       <hr className="line"/>
      </div>
+     
     </div>
   );
 }

@@ -1,15 +1,15 @@
-.show-when-mobile {
+/* .show-when-mobile {
   display: block;
 }
 
 .hide-when-mobile {
   display: none;
-}
+} */
 
 /* ====================================
     1. Font Awesom hamburger menu
 ======================================= */
-.absolute {
+/* .absolute {
   position: absolute;
   top: 0;
   right: 10px;
@@ -28,13 +28,13 @@ input {
 .fas{
   position: absolute;
   right: 10vw;
-}
+} */
 
 /* ====================================
     2. show on click
 ======================================= */
 
-.show-on-click {
+/* .show-on-click {
   display: none;
   border-top: 2px solid black;
 }
@@ -45,7 +45,7 @@ input {
 
 label{
   font-size: 22px;
-  /* border: 2px solid red; */
+ 
   display: block;
   padding: 20px;
 }
@@ -68,13 +68,13 @@ label:hover .fas
 
 .main-div{
   border-bottom: 2px solid black;
-}
+} */
 
 /* ====================================
     3. sub of div
 ======================================= */
 
-.sub-div {
+/* .sub-div {
   display: none;
 }
 
@@ -89,13 +89,13 @@ label:hover .fas
   font-size: 17px;
   padding: 10px 0 10px 35px;
 }
-
+ */
 
 
 /* ====================================
     3. sub sub of css
 ======================================= */
-.sub-sub-div{
+/* .sub-sub-div{
   display: none;
   margin-top: 17px;
 }
@@ -108,4 +108,4 @@ label:hover .fas
 .mini-projects{
   padding: 0;
   font-size: 17px;
-}
+} */

@@ -1,64 +1,31 @@
 import React from "react";
-
-import { link, a ,N} from "react-router-dom";
+import './header.css'
+import { link, a ,N, NavLink} from "react-router-dom";
 
 function Header() {
   return (
     <div>
-      <header className="hide-when-mobile head">
-        <h1>BIS</h1>
-       <a className="main-link hl" href="/Home">Home</a>
-        <ul className="flex">
-        <a className="  main-list main-link " href="/Laptop">
+      <div className=" head">
+       
+       <div className="header">
+       <h1 className="logo">BIS</h1>
+        <ul >
+      
+        <li className="main-list">
+        <a className="main-link " href="/laptop">
+              Home
+            </a>
+            </li >
+          <li className="main-list">
+        <a className="main-link " href="/laptop">
               Laptop
             </a>
-          {/* <li className="main-list">
-            
-            <ul className="sub-ul">
-              <li>
-                <a className="main-link" href="/Computer">
-                  <a href="">Samsung</a>
-                </a>
-              </li>
-              <li>
-                <a href="">lenovo</a>
-              </li>
-              <li>
-                <a href="">LG</a>
-              </li>
-            </ul>
-          </li> */}
-          <a className="main-link main-list" href="/Computer">
+            </li >
+            < li className="main-list">
+          <a className="main-link " href="/computer">
               Computer
             </a>
-          {/* <li className="main-list">
-            
-            <ul className="sub-ul">
-              <li>
-                <a href=""> Samsung</a>
-              </li>
-              <li>
-                <a href="">LG</a>
-              </li>
-              <li>
-                <a href="">lenovo</a>
-              </li>
-              <li className="mini-projects">
-                <a href="">mini projects&nbsp; + </a>
-                <ul className="sub-sub-ul">
-                  <li>
-                    <a href="">project 1</a>
-                  </li>
-                  <li>
-                    <a href="">project 2</a>
-                  </li>
-                  <li>
-                    <a href="">project 3</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li> */}
+            </li>
           <li className="main-list">
             <a className="main-link" href="/Proudcts">
               Proudcts
@@ -69,77 +36,14 @@ function Header() {
               Login
             </a>
           </li>
-          
-        </ul>
-      </header>
-      <header className="show-when-mobile">
-        <h1>africa store</h1>
-        <ul className="flex">
           <li className="main-list">
-            <a className="main-link" href="/Html">
-              Screen
+            <a className="main-link" href="/Proudcts">
+              Register
             </a>
-            <ul className="sub-ul">
-              <li>
-                <a href="">Samsung</a>
-              </li>
-              <li>
-                <a href="">lenovo</a>
-              </li>
-              <li>
-                <a href="">LG</a>
-              </li>
-            </ul>
-          </li>
-          <li className="main-list">
-            <a className="main-link" href="/css">
-              Keyboard
-            </a>
-            <ul className="sub-ul">
-              <li>
-                <a href=""> Samsung</a>
-              </li>
-              <li>
-                <a href="">LG</a>
-              </li>
-              <li>
-                <a href="">lenovo</a>
-              </li>
-              <li className="mini-projects">
-                <a href="">mini projects&nbsp; + </a>
-                <ul className="sub-sub-ul">
-                  <li>
-                    <a href="">project 1</a>
-                  </li>
-                  <li>
-                    <a href="">project 2</a>
-                  </li>
-                  <li>
-                    <a href="">project 3</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li className="main-list">
-            <a className="main-link" href="/javascript">
-              playStation
-            </a>
-            <ul className="sub-ul sub-of-js">
-              <li>
-                <a href="">5</a>
-              </li>
-              <li>
-                <a href="">4</a>
-              </li>
-              <li>
-                <a href="">3</a>
-              </li>
-            </ul>
           </li>
         </ul>
-        
-      </header>
+      </div>
+      </div>
     </div>
   );
 }

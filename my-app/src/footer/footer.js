@@ -2,14 +2,10 @@ import React from "react";
 import "./footer.css"
 function Footer() {
     return (
-      <>
-       <footer>
-       <div class="footer">
+       <div className="footer">
        All Right Reserved 
-          Leon  © 2022
-      </div>
-        </footer>
-      </>
+          BIS  © 2022
+      </div>    
     );
   }
   
