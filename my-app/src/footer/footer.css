@@ -1,13 +1,16 @@
 
 .footer{
-  background-color:#00008B;
-  padding: 25px 0;
-  text-align: center;
-  font-size: 18px;
-  margin: 20px;
+  background-color: #00008B;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 18px;
+    margin: 0px;
+    transform: translateY(800%);
 }
 @media (max-width:767px) {
   .footer{
-     width: 643px;
+    width: 671px;
+    transform: translateY(1403%);
+
   }
 }

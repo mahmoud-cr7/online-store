@@ -12,7 +12,9 @@ function Header() {
        <div className="header">
        <h1 className="logo">BIS</h1>
         <ul >
-      
+       <input type="search"  placeholder="Search" className="search">
+
+       </input>
         <li className="main-list">
         <a className="main-link " href="/home">
               Home

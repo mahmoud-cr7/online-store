@@ -12,7 +12,7 @@ class Laptop extends Component {
       <div className="Laptop">
         <Header/>
         <div className="h1p">
-       <h1 className="headh1">LAPTOPS</h1>
+       <h1 className="headh1">PRODUCTS</h1>
         <p className="headp"> SECTION</p>
         {/* <hr className="line"/> */}
        </div>
@@ -31,6 +31,42 @@ class Laptop extends Component {
           <div className="sold">sold out</div>
           <div className="quantatiy"> the quantatiy : 20</div>
          
+          </div>
+        </div>
+        <div className="card">
+          <img src={cardimg}/>
+          <h3 className="h3">Mac book</h3>
+          <p> This Store About Computers And its Accessories Lorem ipsum dolor sit
+            <br/>
+            amet consectetur adipisicing elit. Dolor laudantium vitae dolore</p>
+          <div className="specs">
+          <div className="price">price: $10000</div>
+          <div className="sold">sold out</div>
+          <div className="quantatiy"> the quantatiy : 20</div>
+          </div>
+        </div>
+        <div className="card">
+          <img src={cardimg}/>
+          <h3 className="h3">Mac book</h3>
+          <p> This Store About Computers And its Accessories Lorem ipsum dolor sit
+            <br/>
+            amet consectetur adipisicing elit. Dolor laudantium vitae dolore</p>
+          <div className="specs">
+          <div className="price">price: $10000</div>
+          <div className="sold">sold out</div>
+          <div className="quantatiy"> the quantatiy : 20</div>
+          </div>
+        </div>
+        <div className="card">
+          <img src={cardimg}/>
+          <h3 className="h3">Mac book</h3>
+          <p> This Store About Computers And its Accessories Lorem ipsum dolor sit
+            <br/>
+            amet consectetur adipisicing elit. Dolor laudantium vitae dolore</p>
+          <div className="specs">
+          <div className="price">price: $10000</div>
+          <div className="sold">sold out</div>
+          <div className="quantatiy"> the quantatiy : 20</div>
           </div>
         </div>
         <div className="card">
