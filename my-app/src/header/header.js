@@ -16,7 +16,7 @@ function Header() {
 
        </input>
         <li className="main-list">
-        <a className="main-link " href="/home">
+        <a className="main-link " href="/">
               Home
             </a>
             </li >

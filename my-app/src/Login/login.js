@@ -1,19 +1,26 @@
 import { text } from "@fortawesome/fontawesome-svg-core";
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import { ReactDOM } from "react";
-
+import Header from "../header/header";
+// import Header from "../header/header";
 
 import "./login.css"
 export default function Login(){
-return(
+
+    const[userName,setUserName]=useState();
+    const [password, setpassword] = useState();
+    return(
+    <div>
+        <Header/>
     <div className="parent">
         <div className = "register">
 <form>
    
-<input id ="name" type ="text" placeholder="Username....."/>
+<input id ="name" type ="text" value={userName} onChange={(e)=>setUserName(e.target.value)} placeholder="Username....."/>
 
 
-<input id ="password" type ="password" placeholder="password....."/>
+<input id ="password" type ="password" value={password} onChange={(e)=>setpassword(e.target.value)} placeholder="password....."/>
 
 
 
@@ -21,13 +28,22 @@ return(
 
 <div style={{textAlign:"center"}}>
 
-    <button type="submit">Login</button>
+    <button type="button" onClick={(e)=>{
+
+        axios.post("http://localhost:8000/api/auth/login",{
+                email:userName,
+                password
+        }).then(res=>{
+            let data=res.data;
+
+        })
+    }}>Login</button>
 </div>
 </form>
 </div>
 
     </div>
-   
+    </div>
 )
 
 

@@ -1,8 +1,11 @@
 import { text } from "@fortawesome/fontawesome-svg-core";
 import React from "react";
 import "./register.css"
+import Header from "../header/header";
 export default function Register(){
 return(
+    <div>
+        <Header/>
     <div className="parent">
         <div className = "register">
 <form>
@@ -23,6 +26,7 @@ return(
 </form>
 </div>
 
+    </div>
     </div>
 )
 

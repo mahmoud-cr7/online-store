@@ -1,12 +1,23 @@
-import React , {Component} from "react";
+import React , {Component, useEffect, useState} from "react";
 import Header from "../header/header";
+import axios from "axios";
+
 
 import './computer.css';
 import cardimg  from '../images/cardimg.jpg';
 import Footer from "../footer/footer";
 
-class Computers extends Component {
-  render(){
+function Computers()  {
+
+  const [data,setData]= useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:8000/api/products").then((res)=>{setData(res.data.data)} ,(err)=>{console.log(err)});
+      
+
+  }, []);
+      
+
+
     return (
         <div>
       <div className="computres">
@@ -17,89 +28,32 @@ class Computers extends Component {
         {/* <hr className="line"/> */}
        </div>
        <div className="container">
-        <div className="card">
-         <div className="abear">
-         <img src={cardimg}/>
-          <button className="add">Add to cart</button>
-         </div>
-          <h3 className="h3">Mac book pro</h3>
-          <p> This Store About Computers And its Accessories Lorem ipsum dolor sit
-            <br/>
-            amet consectetur adipisicing elit. Dolor laudantium vitae dolore</p>
-          <div className="specs">
-          <div className="price">price: $10000</div>
-          <div className="sold">sold out</div>
-          <div className="quantatiy"> the quantatiy : 20</div>
-         
-          </div>
-        </div>
-        <div className="card">
-          <img src={cardimg}/>
-          <h3 className="h3">Mac book</h3>
-          <p> This Store About Computers And its Accessories Lorem ipsum dolor sit
-            <br/>
-            amet consectetur adipisicing elit. Dolor laudantium vitae dolore</p>
-          <div className="specs">
-          <div className="price">price: $10000</div>
-          <div className="sold">sold out</div>
-          <div className="quantatiy"> the quantatiy : 20</div>
-          </div>
-        </div>
-        <div className="card">
-          <img src={cardimg}/>
-          <h3 className="h3">Mac book</h3>
-          <p> This Store About Computers And its Accessories Lorem ipsum dolor sit
-            <br/>
-            amet consectetur adipisicing elit. Dolor laudantium vitae dolore</p>
-          <div className="specs">
-          <div className="price">price: $10000</div>
-          <div className="sold">sold out</div>
-          <div className="quantatiy"> the quantatiy : 20</div>
-          </div>
-        </div>
-        <div className="card">
-          <img src={cardimg}/>
-          <h3 className="h3">Mac book</h3>
-          <p> This Store About Computers And its Accessories Lorem ipsum dolor sit
-            <br/>
-            amet consectetur adipisicing elit. Dolor laudantium vitae dolore</p>
-          <div className="specs">
-          <div className="price">price: $10000</div>
-          <div className="sold">sold out</div>
-          <div className="quantatiy"> the quantatiy : 20</div>
-          </div>
-        </div>
-        <div className="card">
-          <img src={cardimg}/>
-          <h3 className="h3">Mac book</h3>
-          <p> This Store About Computers And its Accessories Lorem ipsum dolor sit
-            <br/>
-            amet consectetur adipisicing elit. Dolor laudantium vitae dolore</p>
-          <div className="specs">
-          <div className="price">price: $10000</div>
-          <div className="sold">sold out</div>
-          <div className="quantatiy"> the quantatiy : 20</div>
-          </div>
-        </div>
-        <div className="card">
-          <img src={cardimg}/>
-          <h3 className="h3">Mac book</h3>
-          <p> This Store About Computers And its Accessories Lorem ipsum dolor sit
-            <br/>
-            amet consectetur adipisicing elit. Dolor laudantium vitae dolore</p>
-          <div className="specs">
-          <div className="price">price: $10000</div>
-          <div className="sold">sold out</div>
-          <div className="quantatiy"> the quantatiy : 20</div>
-          </div>
-        </div>
-       </div>
+        
+        {data.map((e)=>{
+            return (e.category=== "63aca24f2bb2b90b9a35f325")? (<div className="card">
+            <div className="abear">
+            <img src={e.image  }/>
+             {/* <button className="add">Add to cart</button> */}
+            </div>
+             <h3 className="h3">{e.title}</h3>
+             <p> {e.describtion}</p>
+             <div className="specs">
+             <div className="price">price:{ e.price}</div>
+             <div className="sold">sol:{e.sold}</div>
+             <div className="quantatiy"> the quantatiy :{e.quantity}</div>
+            
+             </div>
+           </div>
+            ):("");
+        })}
+        
+             </div>
      
       </div>
       <Footer/>
       </div>
     );
-  }
+  
   }
  
 
