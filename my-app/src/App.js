@@ -6,20 +6,30 @@ import Computer from './Computer/computer';
 import Header from './header/header';
 // import Computer from './Computer/computer';
 import Laptop from './Laptop/lap'
+import Register from './register/register';
+import MainDash from './components/MainDash/MainDash';
+import RightSide from './components/RightSide/RightSide';
+import Sidebar from './components/Sidebar';
+import './App.css'
+import AdminArea from './AdminArea/AdminArea';
 class App extends Component {
+ 
   render(){
+   
+
     return (
+      <div>
       <div className="App">
         
         <BrowserRouter>
-    <Home></Home>
-        {/* <Computer/> */}
-        {/* <Route exact path='' Component ={Home} />
-        <Route exact path='/computer' Component ={Computer} /> */}
+    {/* <Home></Home> */}
+    {/* <Computer/> */}
+      <AdminArea/>
         </BrowserRouter>
         </div>
    
 
+        </div>
        
     
     );
